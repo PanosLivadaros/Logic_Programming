@@ -1,0 +1,2 @@
+common_list([H|_], Y) :- member(H, Y). % checks if first element of first list exists in second list with built-in predicate
+common_list([_|T], Y) :- common_list(T, Y). % moves to the next element in the first list if no match was found
